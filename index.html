@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign-up Form</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- LEFT SIDE -->
+    <div class="image-sidebar">
+      <div class="overlay">
+        <img class="odin-logo" src="./images/odin-lined.png" alt="Odin logo" />
+        <h1 class="site-title">ODIN</h1>
+      </div>
+      <div class="photo-credit">
+        Photo by
+        <a href="https://unsplash.com/@haliewestphoto" target="_blank">Halie West</a> 
+        on
+        <a href="https://unsplash.com/" target="_blank">Unsplash</a> 
+      </div>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="form-container">
+      <h2>
+        This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br>
+        Sign up <em>now</em> to get started.<br><br>
+        You <em>know</em> you want to.
+      </h2>
+
+      <form class="signup-form" action="#" method="post">
+        <div class="form-box">
+          <h3 class="form-intro">Let's do this!</h3>
+
+          <div class="form-field">
+            <div class="field-group">
+              <label for="first-name">First Name</label>
+              <input type="text" name="first-name" id="first-name" required />
+            </div>
+            <div class="field-group">
+              <label for="last-name">Last Name</label>
+              <input type="text" name="last-name" id="last-name" required />
+            </div>
+          </div>
+          <div class="form-field">
+            <div class="field-group">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required />
+            </div>
+    
+            <div class="field-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" name="phone" id="phone" required />
+            </div>
+          </div>
+          <div class="form-field">
+            <div class="field-group">
+              <label for="password">Password</label>
+              <input type="password"
+                     name="password"
+                     id="password" 
+                     pattern="^(?=.*\d)(?=.*[a-zA-Z])(?=.*[^\da-zA-z\s]){8,}$"
+                     required
+                     title="Password must be at least 8 characters long, include at least 1 uppercase letter, 1 number, and 1 symbol." />
+            </div>
+    
+            <div class="field-group">
+              <label for="confirm-password">Confirm Password</label>
+              <input type="password"
+                     name="confirm-password"
+                     id="confirm-password" 
+                     pattern="^(?=.*\d)(?=.*[a-zA-Z])(?=.*[^\da-zA-z\s]){8,}$"
+                     required
+                     title="Password must be at least 8 characters long, include at least 1 uppercase letter, 1 number, and 1 symbol." />
+            </div>
+          </div>
+        </div>
+
+        <button type="submit" class="submit-btn">Create Account</button>
+
+        <p class="login-link">
+          Already have an account? <a href="#">Log in</a>
+        </p>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
